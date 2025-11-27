@@ -39,26 +39,28 @@
 
     h2 {
         margin-bottom: 2rem;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
-    .bio-preview p {
-        max-width: 800px;
-        margin: 0 auto 2rem;
-        font-size: 1.2rem;
-        color: #ccc;
+    .bio-preview {
+        & p {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            font-size: 1rem;
+            color: #ccc;
+        }
     }
 
     .modal-body {
         max-height: 60vh;
         overflow-y: auto;
         padding-right: 10px; /* Space for scrollbar */
-    }
 
-    .modal-body p {
-        margin-bottom: 1.5rem;
-        text-align: left;
-        line-height: 1.8;
+        & p {
+            margin-bottom: 1.5rem;
+            text-align: left;
+            line-height: 1.8;
+        }
     }
 
     h3 {
@@ -67,5 +69,17 @@
         border-bottom: 1px solid var(--color-surface);
         padding-bottom: 10px;
         margin-top: 0;
+    }
+
+    @media (min-width: 768px) {
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        .bio-preview {
+            & p {
+                font-size: 1.2rem;
+            }
+        }
     }
 </style>

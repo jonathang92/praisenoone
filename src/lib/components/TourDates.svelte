@@ -151,40 +151,41 @@
 
     .show-item {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
         padding: 20px;
         background: var(--color-surface);
         transition: background 0.3s ease;
         flex-wrap: wrap;
         gap: 15px;
-    }
 
-    .show-item:hover {
-        background: #2a2a2a;
+        &:hover {
+            background: #2a2a2a;
+        }
     }
 
     .show-date {
         font-family: var(--font-heading);
         font-size: 1.5rem;
         color: var(--color-primary);
-        flex: 1;
         text-align: left;
         min-width: 150px;
+        width: 100%;
     }
 
     .show-event {
-        flex: 2;
         text-align: left;
         font-weight: 600;
         min-width: 200px;
+        width: 100%;
     }
 
     .show-location {
-        flex: 1;
         text-align: left;
         color: #aaa;
         min-width: 150px;
+        width: 100%;
     }
 
     .location-link {
@@ -194,10 +195,10 @@
         color: #aaa;
         text-decoration: none;
         transition: color 0.3s ease;
-    }
 
-    .location-link:hover {
-        color: var(--color-primary);
+        &:hover {
+            color: var(--color-primary);
+        }
     }
 
     .pin-icon {
@@ -206,6 +207,13 @@
 
     .show-action {
         flex: 0 0 auto;
+        width: 100%;
+
+        & .btn {
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
     }
 
     .btn-sm {
@@ -249,42 +257,50 @@
         padding-bottom: 5px;
         border-bottom: 1px solid transparent;
         transition: all 0.3s ease;
-    }
 
-    .instagram-link:hover {
-        border-bottom-color: var(--color-primary);
-        transform: translateY(-2px);
+        &:hover {
+            border-bottom-color: var(--color-primary);
+            transform: translateY(-2px);
+
+            & .icon {
+                transform: rotate(15deg);
+            }
+        }
     }
 
     .icon {
         transition: transform 0.3s ease;
     }
 
-    .instagram-link:hover .icon {
-        transform: rotate(15deg);
-    }
-
-    @media (max-width: 768px) {
+    @media (min-width: 768px) {
         .show-item {
-            flex-direction: column;
-            align-items: flex-start;
-            text-align: left;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .show-date,
-        .show-event,
+        .show-date {
+            flex: 1;
+            width: auto;
+        }
+
+        .show-event {
+            flex: 2;
+            width: auto;
+        }
+
         .show-location {
-            width: 100%;
-            text-align: left;
+            flex: 1;
+            width: auto;
         }
 
         .show-action {
-            width: 100%;
-        }
+            width: auto;
 
-        .show-action .btn {
-            display: block;
-            text-align: center;
+            & .btn {
+                display: inline-block;
+                width: unset;
+            }
         }
     }
 </style>

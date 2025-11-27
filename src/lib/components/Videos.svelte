@@ -53,7 +53,12 @@
     </div>
 </section>
 
-<Modal show={showModal} on:close={closeVideo} adaptive={true} transparent={true}>
+<Modal
+    show={showModal}
+    on:close={closeVideo}
+    adaptive={true}
+    transparent={true}
+>
     {#if currentVideoId}
         <div class="video-container">
             <iframe
@@ -76,7 +81,7 @@
 
     h2 {
         margin-bottom: 3rem;
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-family: var(--font-heading, sans-serif);
     }
 
@@ -91,10 +96,18 @@
     .video-item {
         cursor: pointer;
         transition: transform 0.3s ease;
-    }
 
-    .video-item:hover {
-        transform: translateY(-5px);
+        &:hover {
+            transform: translateY(-5px);
+
+            & img {
+                transform: scale(1.05);
+            }
+
+            & .play-overlay {
+                opacity: 1;
+            }
+        }
     }
 
     .thumbnail-wrapper {
@@ -103,17 +116,13 @@
         overflow: hidden;
         aspect-ratio: 16/9;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    }
 
-    .thumbnail-wrapper img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.3s ease;
-    }
-
-    .video-item:hover img {
-        transform: scale(1.05);
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
     }
 
     .play-overlay {
@@ -128,17 +137,13 @@
         background: rgba(0, 0, 0, 0.3);
         opacity: 0;
         transition: opacity 0.3s ease;
-    }
 
-    .video-item:hover .play-overlay {
-        opacity: 1;
-    }
-
-    .play-overlay svg {
-        color: #fff;
-        filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.5));
-        width: 64px;
-        height: 64px;
+        & svg {
+            color: #fff;
+            filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.5));
+            width: 64px;
+            height: 64px;
+        }
     }
 
     h3 {
@@ -156,5 +161,11 @@
     iframe {
         width: 100%;
         height: 100%;
+    }
+
+    @media (min-width: 768px) {
+        h2 {
+            font-size: 2.5rem;
+        }
     }
 </style>

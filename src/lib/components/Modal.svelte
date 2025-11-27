@@ -45,7 +45,8 @@
             class:adaptive
             on:click|stopPropagation
             on:keydown={() => {}}
-            role="document"
+            role="dialog"
+            aria-modal="true"
             tabindex="-1"
             transition:scale={{ duration: 200, start: 0.95 }}
         >

@@ -88,10 +88,10 @@
     object-fit: cover;
     opacity: 0;
     transition: opacity 1s ease;
-  }
 
-  video.visible {
-    opacity: 1;
+    &.visible {
+      opacity: 1;
+    }
   }
 
   .overlay {
@@ -111,37 +111,49 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-  }
 
-  .hero-logo {
-    max-width: 600px;
-    width: 90%;
-    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.8));
-  }
-
-  h1 {
-    font-size: 2rem;
-    color: var(--color-text);
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-
-  .cta-group {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  @media (max-width: 768px) {
-    .hero-logo {
+    & .hero-logo {
       max-width: 300px;
+      width: 90%;
+      filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.8));
     }
 
-    h1 {
+    & h1 {
       font-size: 1.5rem;
+      color: var(--color-text);
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    & .cta-group {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      & .btn {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .content {
+      & .hero-logo {
+        max-width: 600px;
+      }
+
+      & h1 {
+        font-size: 2rem;
+      }
+
+      & .cta-group {
+        & .btn {
+          width: unset;
+        }
+      }
     }
   }
 </style>

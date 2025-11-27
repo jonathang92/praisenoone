@@ -132,12 +132,12 @@
         padding: 20px 0;
         transition: all 0.3s ease;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
-    }
 
-    nav.scrolled {
-        background: rgba(10, 10, 10, 0.95);
-        padding: 10px 0;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        &.scrolled {
+            background: rgba(10, 10, 10, 0.95);
+            padding: 10px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
     }
 
     .nav-content {
@@ -148,94 +148,110 @@
 
     .logo {
         height: 65px;
-    }
 
-    .logo img {
-        height: 65px;
-        width: auto;
-        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+        & img {
+            height: 65px;
+            width: auto;
+            filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+        }
     }
 
     .nav-actions {
         display: flex;
         align-items: center;
         gap: 20px;
-    }
 
-    .lang-toggle {
-        background: none;
-        border: 1px solid var(--color-primary);
-        color: var(--color-primary);
-        padding: 5px 10px;
-        font-size: 0.9rem;
-        font-weight: 700;
-        border-radius: 4px;
-        transition: all 0.3s ease;
-        width: 40px;
-    }
+        & .lang-toggle {
+            background: none;
+            border: 1px solid var(--color-primary);
+            color: var(--color-primary);
+            padding: 5px 10px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            width: 40px;
 
-    .lang-toggle:hover {
-        background: var(--color-primary);
-        color: var(--color-bg);
+            &:hover {
+                background: var(--color-primary);
+                color: var(--color-bg);
+            }
+        }
+
+        & .menu-toggle {
+            display: flex;
+            background: none;
+            border: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            z-index: 1002;
+
+            & .bar {
+                width: 25px;
+                height: 3px;
+                background-color: var(--color-text);
+                transition: 0.3s;
+
+                &.active:nth-child(1) {
+                    transform: rotate(45deg) translate(5px, 6px);
+                }
+
+                &.active:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &.active:nth-child(3) {
+                    transform: rotate(-45deg) translate(5px, -6px);
+                }
+            }
+        }
     }
 
     .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 70%;
+        background: var(--color-surface);
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+        z-index: 1001;
         list-style: none;
         gap: 30px;
-    }
 
-    .nav-links a {
-        font-family: var(--font-heading);
-        font-size: 1.2rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        position: relative;
-        cursor: pointer;
-    }
+        &.active {
+            right: 0;
+        }
 
-    .nav-links a::after {
-        content: "";
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background: var(--color-primary);
-        transition: width 0.3s ease;
-    }
+        & a {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            cursor: pointer;
 
-    .nav-links a:hover::after {
-        width: 100%;
-    }
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background: var(--color-primary);
+                transition: width 0.3s ease;
+            }
 
-    .menu-toggle {
-        display: none;
-        background: none;
-        border: none;
-        flex-direction: column;
-        gap: 5px;
-        cursor: pointer;
-        z-index: 1002;
-    }
-
-    .bar {
-        width: 25px;
-        height: 3px;
-        background-color: var(--color-text);
-        transition: 0.3s;
-    }
-
-    .bar.active:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 6px);
-    }
-
-    .bar.active:nth-child(2) {
-        opacity: 0;
-    }
-
-    .bar.active:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -6px);
+            &:hover::after {
+                width: 100%;
+            }
+        }
     }
 
     .nav-overlay {
@@ -252,37 +268,28 @@
             opacity 0.3s ease,
             visibility 0.3s ease;
         z-index: 1000;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+        }
     }
 
-    .nav-overlay.active {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    @media (max-width: 768px) {
-        .menu-toggle {
-            display: flex;
+    @media (min-width: 768px) {
+        .nav-actions {
+            & .menu-toggle {
+                display: none;
+            }
         }
 
         .nav-links {
-            position: fixed;
-            top: 0;
-            right: -100%;
-            height: 100vh;
-            width: 70%;
-            background: var(--color-surface);
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            transition: right 0.3s ease;
-            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
-            z-index: 1001;
+            position: static;
+            height: auto;
+            width: auto;
+            background: none;
+            flex-direction: row;
+            box-shadow: none;
+            justify-content: flex-end;
         }
-
-        .nav-links.active {
-            right: 0;
-        }
-
-        /* Hide lang toggle in desktop position if needed, or adjust layout */
     }
 </style>

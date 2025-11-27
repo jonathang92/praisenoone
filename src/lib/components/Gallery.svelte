@@ -66,7 +66,7 @@
 
     h2 {
         margin-bottom: 3rem;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .gallery-grid {
@@ -81,17 +81,17 @@
         height: 300px;
         position: relative;
         cursor: pointer;
-    }
 
-    .gallery-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.5s ease;
-    }
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
 
-    .gallery-item:hover img {
-        transform: scale(1.1);
+        &:hover img {
+            transform: scale(1.1);
+        }
     }
 
     .image-container {
@@ -100,13 +100,19 @@
         align-items: center;
         width: auto;
         height: auto;
+
+        & img {
+            max-width: 90vw;
+            max-height: 90vh;
+            object-fit: contain;
+            border-radius: 4px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+        }
     }
 
-    .image-container img {
-        max-width: 90vw;
-        max-height: 90vh;
-        object-fit: contain;
-        border-radius: 4px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    @media (min-width: 768px) {
+        h2 {
+            font-size: 2.5rem;
+        }
     }
 </style>
