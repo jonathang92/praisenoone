@@ -1,0 +1,180 @@
+{
+    "contact": {
+        "email": "praisenoone@gmail.com"
+    },
+    "bio": {
+        "en": {
+            "preview": "Praise No One is a Groove and Nu Metal band delivering heavy riffs and powerful rhythms. Forged in the fires of passion and aggression, we bring a sound that pays homage to the giants of the genre while carving our own path of destruction.",
+            "full": [
+                "<strong>Praise No One</strong> emerged with a singular vision: to resurrect the raw power and groove that defined an era of metal. With thunderous drums, down-tuned guitars, and vocals that range from guttural growls to haunting melodies, the band creates a sonic landscape that is both crushing and cathartic.",
+                "Drawing influence from legends like Pantera, Korn, and Sepultura, Praise No One infuses modern production with old-school attitude. Their live performances are a testament to their energy, leaving audiences breathless and craving more.",
+                "The band's latest release, \"Truth or Consequences III: Destroyers\", marks a new chapter in their evolution, pushing the boundaries of their sound further than ever before."
+            ]
+        },
+        "es": {
+            "preview": "Praise No One es una banda de Groove y Nu Metal que ofrece riffs pesados y ritmos potentes. Forjados en el fuego de la pasión y la agresión, traemos un sonido que rinde homenaje a los gigantes del género mientras labramos nuestro propio camino de destrucción.",
+            "full": [
+                "<strong>Praise No One</strong> surgió con una visión singular: resucitar el poder crudo y el groove que definieron una era del metal. Con baterías atronadoras, guitarras afinadas en grave y voces que van desde guturales profundos hasta melodías inquietantes, la banda crea un paisaje sonoro que es a la vez aplastante y catártico.",
+                "Inspirándose en leyendas como Pantera, Korn y Sepultura, Praise No One infunde una producción moderna con una actitud de la vieja escuela. Sus presentaciones en vivo son un testimonio de su energía, dejando al público sin aliento y deseando más.",
+                "El último lanzamiento de la banda, \"Truth or Consequences III: Destroyers\", marca un nuevo capítulo en su evolución, empujando los límites de su sonido más allá que nunca."
+            ]
+        }
+    },
+    "hero": {
+        "title": "Truth or Consequences III: Destroyers"
+    },
+    "socials": [
+        {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/praisenoone/",
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"2\" y=\"2\" width=\"20\" height=\"20\" rx=\"5\" ry=\"5\"></rect><path d=\"M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z\"></path><line x1=\"17.5\" y1=\"6.5\" x2=\"17.51\" y2=\"6.5\"></line></svg>"
+        },
+        {
+            "name": "TikTok",
+            "url": "https://www.tiktok.com/@praisenoone",
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5\"></path></svg>"
+        },
+        {
+            "name": "Facebook",
+            "url": "https://www.facebook.com/praisenoone",
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z\"></path></svg>"
+        },
+        {
+            "name": "YouTube",
+            "url": "https://www.youtube.com/@praisenoone",
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z\"></path><polygon points=\"9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02\"></polygon></svg>"
+        }
+    ],
+    "videos": [
+        {
+            "id": "tn9jHL0WZnQ",
+            "title": "Enter the Void"
+        },
+        {
+            "id": "4PdBlhRpjCA",
+            "title": "Worship Without Questions"
+        },
+        {
+            "id": "yTiE5mv_bSk",
+            "title": "The Fear Experiment"
+        }
+    ],
+    "gallery": [
+        {
+            "src": "/assets/_DSC2524.jpg",
+            "alt": ""
+        },
+        {
+            "src": "/assets/_DSC2542.jpg",
+            "alt": ""
+        },
+        {
+            "src": "/assets/_DSC2560.jpg",
+            "alt": ""
+        },
+        {
+            "src": "/assets/_DSC2588.jpg",
+            "alt": ""
+        },
+        {
+            "src": "/assets/_DSC2601.jpg",
+            "alt": ""
+        },
+        {
+            "src": "/assets/_DSC2620.jpg",
+            "alt": ""
+        }
+    ],
+    "tourDates": [
+        {
+            "date": "12/12/2025",
+            "event": "LIVING AFTER MIDNIGHT PARTY (Vol. 1)",
+            "location": "Rincón 1330, CABA",
+            "ticketLink": "https://www.instagram.com/p/DRQQV1OkpbM/",
+            "mapLink": "https://maps.app.goo.gl/Rpzrz6GRgNCRE4CH6"
+        },
+        {
+            "date": "04/11/2025",
+            "event": "Coming Soon",
+            "location": "Stay Tuned",
+            "mapLink": ""
+        },
+        {
+            "date": "04/11/2025",
+            "event": "Coming Soon",
+            "location": "Stay Tuned",
+            "ticketLink": "#",
+            "mapLink": ""
+        }
+    ],
+    "producer": {
+        "logo": "/assets/fidedignin.PNG",
+        "url": "https://www.instagram.com/fidedignin/"
+    },
+    "i18n": {
+        "en": {
+            "nav": {
+                "home": "Home",
+                "bio": "Bio",
+                "music": "Music",
+                "gallery": "Gallery",
+                "tour": "Shows",
+                "contact": "Contact"
+            },
+            "sections": {
+                "bio": "Bio",
+                "tour": "Shows",
+                "gallery": "Gallery",
+                "music": "Music",
+                "videos": "Videos"
+            },
+            "actions": {
+                "tickets": "Tickets",
+                "listen": "Listen on Spotify",
+                "listenNow": "Listen Now",
+                "upcoming": "Upcoming Shows",
+                "watch": "Watch Video",
+                "readMore": "Read Full Bio"
+            },
+            "messages": {
+                "noTourDates": "There are no upcoming events scheduled at this time.",
+                "followInstagram": "Follow us on Instagram to stay updated."
+            },
+            "footer": {
+                "rights": "All Rights Reserved."
+            }
+        },
+        "es": {
+            "nav": {
+                "home": "Inicio",
+                "bio": "Bio",
+                "music": "Música",
+                "gallery": "Galería",
+                "tour": "Eventos",
+                "contact": "Contacto"
+            },
+            "sections": {
+                "bio": "Bio",
+                "tour": "Eventos",
+                "gallery": "Galería",
+                "music": "Música",
+                "videos": "Videos"
+            },
+            "actions": {
+                "tickets": "Entradas",
+                "listen": "Escuchar en Spotify",
+                "listenNow": "Escuchar Ahora",
+                "upcoming": "Próximos Eventos",
+                "watch": "Ver Video",
+                "readMore": "Leer Biografía Completa"
+            },
+            "messages": {
+                "noTourDates": "No hay eventos programados en este momento.",
+                "followInstagram": "Síguenos en Instagram para enterarte de nuevas fechas."
+            },
+            "footer": {
+                "rights": "Todos los derechos reservados."
+            }
+        }
+    }
+}
