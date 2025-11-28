@@ -18,7 +18,7 @@
 <section id="home" class="hero">
   <div class="background-container">
     <div class="fallback-image"></div>
-    <!-- <video
+    <video
       autoplay
       muted
       loop
@@ -27,7 +27,7 @@
       poster="/assets/10.jpg"
     >
       <source src="/assets/PNO LOOP 2.mp4" type="video/mp4" />
-    </video> -->
+    </video>
     <div class="overlay"></div>
   </div>
 
