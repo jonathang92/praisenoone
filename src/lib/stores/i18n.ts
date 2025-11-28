@@ -4,12 +4,32 @@ import content from '../data/content.json';
 type Language = 'en' | 'es';
 
 function createI18nStore() {
-    const { subscribe, set, update } = writable<Language>('es');
+    let initialLang: Language = 'es';
+
+    if (typeof localStorage !== 'undefined') {
+        const saved = localStorage.getItem('language_preference') as Language;
+        if (saved === 'en' || saved === 'es') {
+            initialLang = saved;
+        }
+    }
+
+    const { subscribe, set, update } = writable<Language>(initialLang);
 
     return {
         subscribe,
-        set,
-        toggle: () => update(lang => lang === 'en' ? 'es' : 'en')
+        set: (lang: Language) => {
+            if (typeof localStorage !== 'undefined') {
+                localStorage.setItem('language_preference', lang);
+            }
+            set(lang);
+        },
+        toggle: () => update(lang => {
+            const newLang = lang === 'en' ? 'es' : 'en';
+            if (typeof localStorage !== 'undefined') {
+                localStorage.setItem('language_preference', newLang);
+            }
+            return newLang;
+        })
     };
 }
 
