@@ -46,7 +46,7 @@
             class="logo"
             on:click={(e) => handleLinkClick(e, "#home")}
         >
-            <img src="/assets/mainlogo.PNG" alt="Praise No One Logo" />
+            <img src="assets/mainlogo.PNG" alt="Praise No One Logo" />
         </a>
 
         <div
