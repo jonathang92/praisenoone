@@ -24,7 +24,7 @@
       loop
       playsinline
       class:visible={videoLoaded}
-      poster="assets/10.jpg"
+      poster="assets/10.webp"
     >
       <source src="assets/PNO LOOP 2.mp4" type="video/mp4" />
     </video>
@@ -33,7 +33,7 @@
 
   <div class="content">
     <img
-      src="assets/Praise No One (Logo).png"
+      src="assets/Praise No One (Logo).webp"
       alt="Praise No One"
       class="hero-logo"
     />
@@ -71,7 +71,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("assets/10.jpg");
+    background-image: url("assets/10.webp");
     background-size: cover;
     background-position: center;
   }

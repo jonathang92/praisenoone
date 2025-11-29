@@ -61,27 +61,27 @@
     ],
     "gallery": [
         {
-            "src": "assets/DSC2524.jpg",
+            "src": "assets/DSC2524.webp",
             "alt": ""
         },
         {
-            "src": "assets/DSC2542.jpg",
+            "src": "assets/DSC2542.webp",
             "alt": ""
         },
         {
-            "src": "assets/DSC2560.jpg",
+            "src": "assets/DSC2560.webp",
             "alt": ""
         },
         {
-            "src": "assets/DSC2588.jpg",
+            "src": "assets/DSC2588.webp",
             "alt": ""
         },
         {
-            "src": "assets/DSC2601.jpg",
+            "src": "assets/DSC2601.webp",
             "alt": ""
         },
         {
-            "src": "assets/DSC2620.jpg",
+            "src": "assets/DSC2620.webp",
             "alt": ""
         }
     ],
@@ -108,7 +108,7 @@
         }
     ],
     "producer": {
-        "logo": "assets/fidedignin.PNG",
+        "logo": "assets/fidedignin.webp",
         "url": "https://www.instagram.com/fidedignin/"
     },
     "i18n": {
